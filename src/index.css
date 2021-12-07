@@ -11,6 +11,7 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 500px;
   margin: 30px auto;
   overflow: auto;
@@ -84,16 +85,24 @@ body {
 }
 
 button{
-  background-color: #4CAF50; /* Green */
+  background-color: green; /* Green */
   border: none;
   color: white;
   padding: 15px 32px;
   text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
+}
+
+.btn-possition{
+  position: absolute;
+  right: 30px;
+  top: 30px;
 }
 
 .form-control input {

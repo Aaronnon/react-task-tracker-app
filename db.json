@@ -17,6 +17,12 @@
       "day": "today",
       "reminder": false,
       "id": 3
+    },
+    {
+      "text": "Mid Term",
+      "day": "Tuesday",
+      "reminder": false,
+      "id": 4
     }
   ]
 }

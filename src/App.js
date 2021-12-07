@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 import { Footer } from './components/Footer';
 import { About } from './components/About';
 import { TaskDetails } from './components/TaskDetails'
+import { BtnAdd } from './components/BtnAdd';
 import './App.css';
 
 const App = () => {
@@ -81,11 +82,12 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="container">
-        <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
-        {/* <AddBtn /> */}
+        <Header />
+        
         <Routes>
           <Route path='/' element={
             <>
+            <BtnAdd className="BtnAddContainer" onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask}/>
               {showAddTask && <AddTask onAdd={addTask} />}
               {tasks.length > 0 ? <Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} /> : 'No Tasks To Show'}
             </>
