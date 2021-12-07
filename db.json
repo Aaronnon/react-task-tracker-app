@@ -23,6 +23,12 @@
       "day": "Tuesday",
       "reminder": false,
       "id": 4
+    },
+    {
+      "text": "Sleep",
+      "day": "All day",
+      "reminder": false,
+      "id": 5
     }
   ]
 }

@@ -11,7 +11,7 @@ export const TaskDetails = () => {
 
     useEffect(() => {
         const fetchTask = async () => {
-            const res = await fetch(`http://localhost:5000/tasks/${params.id}`)
+            const res = await fetch(`https://my-json-server.typicode.com/Aaronnon/react-task-tracker-app/tasks/${params.id}`)
             const data = await res.json()
 
             if (res.status === 404) {
